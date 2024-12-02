@@ -27,6 +27,7 @@ import { IssueId } from "src/model";
 import { WhoAreYou } from "src/views/pages/app/whoAreYou/WhoAreYou";
 import { RequestMaintainerRights } from "src/views/pages/app/requestMaintainerRights/RequestMaintainerRights";
 import { MdConversion } from "src/views/pages/app/mdConversion/MdConversion";
+import { Shop } from "src/views/pages/shop";
 
 export const STAGE_FLAG: boolean = Boolean(process.env.REACT_APP_STAGE);
 
@@ -54,6 +55,7 @@ const App = () => {
         <Routes>
           <Route element={<StageRoutes />}>
             <Route path="/blog" element={<MdConversion />} />
+            <Route path="/shop" element={<Shop />} />
           </Route>
 
           <Route path="/" element={<Home />} />
